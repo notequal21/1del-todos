@@ -1,5 +1,6 @@
 // -------- imports --------
 @import "fonts";
+@import "components/_ui.scss";
 @import "components/_fonts";
 @import "components/_normalize.scss";
 @import "components/_mixins.scss";
@@ -7,7 +8,6 @@
 @import "components/_variables.scss";
 @import "components/_header.scss";
 @import "components/_footer.scss";
-@import "components/_ui.scss";
 @import "pages/index/_main.scss";
 
 // fonts --------- &display=swap || &subset=cyrillic-ext
@@ -22,12 +22,27 @@ body {
   // Default font
   font-family: 'Inter';
   background: linear-gradient(139.72deg, #2C3753 0%, #181E2E 100%);
+  background-attachment: fixed;
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .container {
-  max-width: 0px; // <--- container res +30px for padding
+  max-width: 1152px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
+
+  @media (min-width:768px) {
+    padding: 0 40px;
+    max-width: 1216px;
+  }
+
+  @media (min-width:992px) {
+    padding: 0 48px;
+    max-width: 1216px;
+  }
 }
 
 .wrapper {
@@ -43,7 +58,8 @@ body {
 
 
 // ===========
-.test {
+.eq0123-test {
+  padding: 50px 0;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -56,6 +72,7 @@ body {
 }
 
 .eq0123-ui-page-list {
+  padding: 50px 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
