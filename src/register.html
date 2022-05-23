@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 @@include('components/_head.html', {
-'title':'1DEL | Login',
+'title':'1DEL | Register',
 })
 
 <body>
@@ -14,25 +14,28 @@
         <div class="container">
           <div class="login-body">
             <div class="login-body__title">
-              Login
+              Register
             </div>
             <div class="divider"></div>
+            <label class="login-body__input input">
+              <input type="text" placeholder="Name">
+            </label>
             <label class="login-body__input input">
               <input type="text" placeholder="Email">
             </label>
             <label class="login-body__input input">
               <input type="password" placeholder="Password">
             </label>
+            <label class="login-body__input input">
+              <input type="password" placeholder="Password confirmation">
+            </label>
             <label class="login-body__check checkbox">
               <input type="checkbox">
               <span class="fake"></span>
-              Remember me
+              I agree with the user's rules
             </label>
             <div class="login-body__btn btn blue">
-              Log In
-            </div>
-            <div class="login-body__reg">
-              <a href="">Register</a>
+              Register
             </div>
           </div>
         </div>
