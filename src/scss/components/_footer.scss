@@ -1,0 +1,22 @@
+.footer {
+  &-body {
+    padding: 23px 0 22px;
+    position: relative;
+
+    @media (max-width:767px) {
+      padding: 10px 0;
+    }
+
+    &__cr {
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: #36415D;
+    }
+
+    >.divider {
+      position: absolute;
+      top: 0;
+    }
+  }
+}

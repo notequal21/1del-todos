@@ -35,5 +35,3 @@ export const burgerJs = () => {
     openBtn.addEventListener('click', toggleBurger)
   }
 }
-
-// (gist - b47008824b0175d587f9acbc51892319)

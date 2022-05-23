@@ -550,6 +550,26 @@ h6 {
   color: #FFFFFF;
 }
 
+.footer-body {
+  padding: 23px 0 22px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .footer-body {
+    padding: 10px 0;
+  }
+}
+.footer-body__cr {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #36415D;
+}
+.footer-body > .divider {
+  position: absolute;
+  top: 0;
+}
+
 body {
   overflow: auto;
   font-family: "Inter";
