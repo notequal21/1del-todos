@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      <div class="test">
+        <div class="btn blue">
+          Button
+        </div>
+        <div class="btn green">
+          Button
+        </div>
+        <div class="btn red">
+          Button
+        </div>
+        <div class="btn white border">
+          <span>Button</span>
+        </div>
+        <div class="btn green border">
+          <span>Button</span>
+        </div>
+        <div class="btn red border">
+          <span>Button</span>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="fake"></span>
+        </label>
+
+        <label class="radio">
+          <input name="123" type="radio">
+          <span class="fake"></span>
+        </label>
+        <label class="radio">
+          <input name="123" type="radio">
+          <span class="fake"></span>
+        </label>
+
+        <label class="input">
+          <input type="text" placeholder="Lorem ispum">
+        </label>
+
+        <label class="input">
+          <input type="text" placeholder="Lorem ispum">
+          <span>
+            <img src="./img/icons/show.svg" alt="">
+          </span>
+        </label>
+
+        <label class="input">
+          <input type="text" placeholder="Lorem ispum">
+          <span>
+            <img src="./img/icons/unshow.svg" alt="">
+          </span>
+        </label>
+
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>
