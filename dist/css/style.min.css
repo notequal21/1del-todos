@@ -849,6 +849,15 @@ h6 {
 .tasklist-body__list-item.list-item .list-item__btns-item {
   cursor: pointer;
   padding: 0 20px;
+  position: relative;
+}
+.tasklist-body__list-item.list-item .list-item__btns-item img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tasklist-body__list-item.list-item .list-item__btns-item:hover img {
+  filter: blur(0.8px);
 }
 @media (max-width: 767px) {
   .tasklist-body__list-item.list-item .list-item__btns {

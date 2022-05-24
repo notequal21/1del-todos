@@ -190,6 +190,19 @@
               &-item {
                 cursor: pointer;
                 padding: 0 20px;
+                position: relative;
+
+                img {
+                  width: 24px;
+                  height: 24px;
+                  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+
+                &:hover {
+                  img {
+                    filter: blur(0.8px);
+                  }
+                }
               }
 
               @media (max-width:767px) {
