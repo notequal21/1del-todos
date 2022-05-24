@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'1DEL | Nothing',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      <!-- Modal -->
+      @@include('components/modals/addNew.html')
+
+      <div class="tasklist">
+        <div class="container">
+          <div class="tasklist-body">
+            <div class="tasklist-body__list nothing">
+              <div class="tasklist-body__list-nothing">
+                <img src="./img/icons/nothing.svg" alt="">
+                Nothing to do
+              </div>
+            </div>
+            <div class="tasklist-body__bottom">
+              <div class="divider"></div>
+              <div class="tasklist-body__bottom-btn btn blue addnew-modal-open-btn">
+                <img src="./img/icons/newtask.svg" alt=""> Create Task
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

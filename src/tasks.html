@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'1DEL | Nothing',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      <!-- Modal -->
+      @@include('components/modals/addNew.html')
+
+      <section class="tasklist">
+        <div class="container">
+          <div class="tasklist-body">
+            <div class="tasklist-body__list">
+
+              <div class="tasklist-body__list-top">
+                <span>Created</span>
+                <span>Task</span>
+              </div>
+
+              <div class="tasklist-body__list-item list-item">
+                <div class="list-item__indicator"></div>
+                <div class="list-item__date">
+                  <img src="./img/icons/calendar.svg" alt="">
+                  22.08.2022
+                </div>
+                <div class="nomibile divider vertical"></div>
+                <div class="list-item__text">
+                  As soon as we agree on a date with the Russian delegation, you will be the first to know.
+                </div>
+                <div class="list-item__btns">
+                  <div class="divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/edit.svg" alt="">
+                  </div>
+                  <div class="divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/trash.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="tasklist-body__list-item list-item">
+                <div class="list-item__indicator"></div>
+                <div class="list-item__date">
+                  <img src="./img/icons/calendar.svg" alt="">
+                  22.08.2022
+                </div>
+                <div class="nomibile divider vertical"></div>
+                <div class="list-item__text">
+                  But no matter how he hard tried, the perfect solids and planetary
+                  orbits did not agree with each other very well.
+                </div>
+                <div class="list-item__btns">
+                  <div class="nomibile divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/edit.svg" alt="">
+                  </div>
+                  <div class="nomibile divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/trash.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="tasklist-body__list-item list-item watched">
+                <div class="list-item__indicator"></div>
+                <div class="list-item__date">
+                  <img src="./img/icons/calendar.svg" alt="">
+                  22.08.2022
+                </div>
+                <div class="nomibile divider vertical"></div>
+                <div class="list-item__text">
+                  Contrary to the rules, someone stood up, raised his hand, and wished to put in a comment.
+                </div>
+                <div class="list-item__btns">
+                  <div class="nomibile divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/edit.svg" alt="">
+                  </div>
+                  <div class="nomibile divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/trash.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="tasklist-body__list-item list-item watched">
+                <div class="list-item__indicator"></div>
+                <div class="list-item__date">
+                  <img src="./img/icons/calendar.svg" alt="">
+                  22.08.2022
+                </div>
+                <div class="nomibile divider vertical"></div>
+                <div class="list-item__text">
+                  We will hear evidence and follow the admissibility rules as determined by
+                  Rule 90 of the Illinois Supreme Court.
+                </div>
+                <div class="list-item__btns">
+                  <div class="nomibile divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/edit.svg" alt="">
+                  </div>
+                  <div class="nomibile divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/trash.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="tasklist-body__list-item list-item">
+                <div class="list-item__indicator"></div>
+                <div class="list-item__date">
+                  <img src="./img/icons/calendar.svg" alt="">
+                  22.08.2022
+                </div>
+                <div class="nomibile divider vertical"></div>
+                <div class="list-item__text">
+                  As soon as we agree on a date with the Russian delegation, you will be the first to know.
+                </div>
+                <div class="list-item__btns">
+                  <div class="nomibile divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/edit.svg" alt="">
+                  </div>
+                  <div class="nomibile divider vertical"></div>
+                  <div class="list-item__btns-item">
+                    <img src="./img/icons/trash.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="tasklist-body__list-pages pages">
+                <div class="pages-item">
+                  1
+                </div>
+                <div class="pages-item selected">
+                  2
+                </div>
+                <div class="pages-item">
+                  3
+                </div>
+                <div class="pages-item">
+                  4
+                </div>
+                <div class="pages-item">
+                  5
+                </div>
+                <div class="pages-item">
+                  ...
+                </div>
+                <div class="pages-item">
+                  100
+                </div>
+              </div>
+
+            </div>
+            <div class="tasklist-body__bottom">
+              <div class="divider"></div>
+              <div class="tasklist-body__bottom-btn btn blue addnew-modal-open-btn">
+                <img src="./img/icons/newtask.svg" alt=""> Create Task
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>
