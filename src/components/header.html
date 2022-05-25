@@ -25,26 +25,15 @@
 					Profile
 				</a>
 			</div>
-			<div class="header-body__account">
-				<a href="./register.html">Register</a>
-				<div class="divider vertical"></div>
-				<div class="header-body__account-btn btn green border">
-					<span>
-						Log In
-					</span>
-					Log In
-				</div>
-			</div>
-			<!-- <div class="header-body__account">
-				<a href="./register.html">Hi, Alex!</a>
-				<div class="divider vertical"></div>
-				<div class="header-body__account-btn btn red border">
-					<span>
-						Log out
-					</span>
-					Log out
-				</div>
-			</div> -->
+
+			@@if (logout === 'true') {
+			@@include('_logout.html')
+			}
+
+			@@if (logout === 'false') {
+			@@include('_login.html')
+			}
+
 			<div class="header-body__menu mobile mobile-menu">
 				<a href="">Login</a>
 				<a href="">Register</a>
@@ -56,6 +45,7 @@
 					<a href="">Русский</a>
 				</div>
 			</div>
+
 			<div class="header-body__burger btn green border">
 				<span>
 					<span></span>

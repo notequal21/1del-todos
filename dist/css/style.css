@@ -776,13 +776,19 @@ h6 {
 }
 
 .tasklist-body__list-item.list-item .list-item__btns-item img {
+  position: relative;
+  z-index: 1;
   width: 24px;
   height: 24px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tasklist-body__list-item.list-item .list-item__btns-item:hover img {
-  filter: blur(0.8px);
+  filter: drop-shadow(0.5px 0.5px 1.5px #53AF35) contrast(1.2) saturate(1.05) brightness(1.05);
+}
+
+.tasklist-body__list-item.list-item .list-item__btns-item:hover.remove img {
+  filter: drop-shadow(0.5px 0.5px 1.5px #FC5151) contrast(1.2) saturate(1.05) brightness(1.05);
 }
 
 .tasklist-body__list-item.list-item .list-item__indicator {
@@ -1118,6 +1124,7 @@ body.lock {
     margin: 16px 0 0;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .tasklist-body__list-item.list-item {
